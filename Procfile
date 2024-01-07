@@ -1,2 +1,1 @@
-release: python manage.py migrate
-web: gunicorn myproject.wsgi
+web: gunicorn django_local_library.wsgi --log-file - release: python manage.py migrate.
