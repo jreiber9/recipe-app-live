@@ -95,13 +95,23 @@ WSGI_APPLICATION = 'recipe_project.wsgi.application'
 
 # When running locally in development or in CI, a sqlite database file will be used instead
 # to simplify initial setup. Longer term it's recommended to use Postgres locally too.
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd3gd1vdoepdbj8',
+        'USER': 'yhdcorzgvyxnni',
+        'PASSWORD': 'c59f0c9b64e2169b696fb7d39e73a7d36b1066a30d4988f1bf450f2defcdfdb2',
+        'HOST': 'ec2-52-54-200-216.compute-1.amazonaws.com',
+        'PORT':  '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
