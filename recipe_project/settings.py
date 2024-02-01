@@ -39,7 +39,7 @@ Debug = False
 # to list the expected hostnames explicitly to prevent HTTP Host header attacks. See:
 # https://docs.djangoproject.com/en/5.0/ref/settings/#std-setting-ALLOWED_HOSTS
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["127.0.0.1","immense-shelf-79730-77d37f4da642.herokuapp.com/"]
 
 # Application definition
 
