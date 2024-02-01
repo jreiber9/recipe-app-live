@@ -171,7 +171,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Heroku: Update database configuration from $DATABASE_URL.
-db_from_env = dj_database_url.config(conn_max_age=500)
+db_from_env = dj_database_url.config(default='postgres://yhdcorzgvyxnni:c59f0c9b64e2169b696fb7d39e73a7d36b1066a30d4988f1bf450f2defcdfdb2@ec2-52-54-200-216.compute-1.amazonaws.com:5432/d3gd1vdoepdbj8')
 DATABASES['default'].update(db_from_env)
 
 django_heroku.settings(locals())
