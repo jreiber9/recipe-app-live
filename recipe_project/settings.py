@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 import secrets
 from pathlib import Path
+import psycopg2
 
 import dj_database_url
 
